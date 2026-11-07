@@ -1,0 +1,59 @@
+# Validate every .ckan file against CKAN's JSON schema (the vendored copy and the latest
+# upstream copy). On pull requests, also download each changed file's zip and compare its
+# size and hashes with the metadata.
+name: Validate metadata
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      check_downloads:
+        description: "Also download every file and check sizes and hashes"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+env:
+  PYTHONUTF8: "1"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Validate against the vendored CKAN.schema
+        run: python scripts/validate.py --schema schema/CKAN.schema
+
+      - name: Validate against the latest upstream CKAN.schema
+        run: python scripts/validate.py --schema https://raw.githubusercontent.com/KSP-CKAN/CKAN/master/CKAN.schema
+
+      - name: Check downloads of changed files (pull requests)
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          mapfile -t changed < <(git diff --name-only --diff-filter=AM "origin/$BASE_REF...HEAD" -- '*.ckan')
+          if [ "${#changed[@]}" -eq 0 ]; then
+            echo "No .ckan files changed."
+            exit 0
+          fi
+          python scripts/validate.py --check-downloads "${changed[@]}"
+
+      - name: Check all downloads (manual run)
+        if: github.event_name == 'workflow_dispatch' && inputs.check_downloads
+        run: python scripts/validate.py --check-downloads
