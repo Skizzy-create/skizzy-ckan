@@ -1,0 +1,93 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-LargeBoatPartsPack",
+    "name": "Large Boat Parts Pack (SkizzyNaval compatibility build)",
+    "abstract": "Large Boat Parts Pack 3.9.2 (Modern, WW2 and common parts) fixed for KSP 1.12.5 and BDArmory Plus 1.13.",
+    "description": "Drops the KSP 1.3-era SMIndustries.dll (it threw MissingMethodException in the editor), fixes MM patches that edited the wrong module or stripped BuoyancyControl from every mod, sets fireFOV 180 on VLS cells so BDArmory 1.13 launches without turret timeouts, adds Kerbal Powers Naval ballast to submarine hulls, and fixes several asset paths. Installs all four folders at the GameData root (as the original zip intends), so HullBreach's NEEDS[LShipPartsModern] patches apply. Replaces the three CKAN LargeBoatPartsPack modules. Original by Laythe and SpannerMonkey, CC BY-SA 4.0; SM_Industries (localisation, resources) GPL-3.0.",
+    "author": [
+        "Laythe",
+        "SpannerMonkey",
+        "gomker",
+        "Skizzy-create"
+    ],
+    "version": "0.1.0",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": [
+        "CC-BY-SA-4.0",
+        "GPL-3.0"
+    ],
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/LargeBoatPartsPack",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://spacedock.info/mod/167/Large%20Boat%20Parts%20Pack"
+    },
+    "tags": [
+        "parts"
+    ],
+    "provides": [
+        "LargeBoatPartsPack",
+        "LargeBoatPartsPack-Modern",
+        "LargeBoatPartsPack-WW2"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        }
+    ],
+    "recommends": [
+        {
+            "name": "SkizzyNaval-HullBreach"
+        }
+    ],
+    "suggests": [
+        {
+            "name": "KerbalPowersNaval"
+        },
+        {
+            "name": "Hangar"
+        },
+        {
+            "name": "FirespitterCore"
+        }
+    ],
+    "conflicts": [
+        {
+            "name": "LargeBoatPartsPack"
+        },
+        {
+            "name": "LargeBoatPartsPack-Modern"
+        },
+        {
+            "name": "LargeBoatPartsPack-WW2"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/LShipPartsModern",
+            "install_to": "GameData"
+        },
+        {
+            "file": "GameData/LShipPartsRequired",
+            "install_to": "GameData"
+        },
+        {
+            "file": "GameData/LShipPartsWW2",
+            "install_to": "GameData"
+        },
+        {
+            "file": "GameData/SM_Industries",
+            "install_to": "GameData"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.0/SkizzyNaval-LargeBoatPartsPack-0.1.0.zip",
+    "download_size": 29577212,
+    "download_hash": {
+        "sha1": "0C2ED3CA5F171D2EAE2BF913600E112A698C962B",
+        "sha256": "9959637A90AFA41241FBA7AB68D9FBAF77A0F9F9933F3B1B745397103D5E4D60"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 42837024,
+    "release_date": "2026-11-07T19:05:27Z"
+}

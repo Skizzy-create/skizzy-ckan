@@ -1,0 +1,74 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "BDArmory-Skizzy",
+    "name": "BDArmory Plus (Skizzy fork build)",
+    "abstract": "BDArmory Plus 1.13.1 with the Skizzy-create/BDArmory multitarget-1.13.1 plugin (multi-target, parallel salvo, depth-charge fixes). Drop-in replacement for BDArmoryForRunwayProject.",
+    "description": "The upstream BDArmory Plus 1.13.1.0 release zip with two files swapped: GameData/BDArmory/Plugins/BDArmory.dll (built from Skizzy-create/BDArmory branch multitarget-1.13.1, commit 01d0c9676585731e6fe9df85ee2be0ab802a20bf) and GameData/BDArmory/Localization/UI/en-us.cfg (the fork's new UI strings). Same install layout and dependencies as BDArmoryForRunwayProject 1.13.1.0. Provides and conflicts with BDArmory, so only one BDArmory can be installed. BDArmory by BahamutoD, Papa_Joe, jrodrigv, DocNappers and contributors, CC BY-SA 2.0.",
+    "author": [
+        "BahamutoD",
+        "Papa_Joe",
+        "jrodrigv",
+        "ouloul",
+        "Scott Manley",
+        "JR",
+        "DocNappers",
+        "Cl0by",
+        "josue",
+        "aubranium",
+        "benbenwilde",
+        "TheKurgan",
+        "Skizzy-create"
+    ],
+    "version": "v1.13.1.0-skizzy.0.1.0",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "CC-BY-SA-2.0",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/BDArmory/tree/multitarget-1.13.1",
+        "repository": "https://github.com/Skizzy-create/BDArmory",
+        "bugtracker": "https://github.com/Skizzy-create/BDArmory/issues",
+        "x_upstream": "https://github.com/BrettRyland/BDArmory"
+    },
+    "tags": [
+        "plugin",
+        "parts",
+        "sound",
+        "combat"
+    ],
+    "provides": [
+        "BDArmory"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "name": "PhysicsRangeExtender"
+        }
+    ],
+    "conflicts": [
+        {
+            "name": "BDArmory"
+        }
+    ],
+    "install": [
+        {
+            "find": "BDArmory",
+            "install_to": "GameData"
+        },
+        {
+            "find": "craft",
+            "install_to": "Ships",
+            "as": "SPH"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.0/SkizzyNaval-BDArmory-Skizzy-0.1.0.zip",
+    "download_size": 43114627,
+    "download_hash": {
+        "sha1": "73ACFC0D320367B53BCC2D70F22AEA564E13FDD1",
+        "sha256": "2B923306AEA1DD905C93A05A0E0818E02AECEFD1431F40944D2FE923A46F39F4"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 59327442,
+    "release_date": "2026-11-07T19:05:27Z"
+}

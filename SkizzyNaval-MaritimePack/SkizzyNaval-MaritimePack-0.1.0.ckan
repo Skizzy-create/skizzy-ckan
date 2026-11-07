@@ -1,0 +1,58 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-MaritimePack",
+    "name": "Maritime Pack (SkizzyNaval NRE-fix build)",
+    "abstract": "Fengist's Maritime Pack with its plugins rebuilt to stop the NullReferenceExceptions seen in KSP 1.12 and BDArmory fights.",
+    "description": "MPUtils, MPHover, MPEngineSounds and FengistAnim rebuilt from source with null guards for destroyed or split vessels, own-vessel instead of active-vessel lookups, cached hover lists and NaN guards. A ModuleManager patch fixes a missing sound and the misspelt MaxDepth key. All class names and fields are unchanged, so craft and saves load as before. The Maritime Pack is not on CKAN; this build is made from the GitHub snapshot 2822417. Original by Fengist (DataInterlock), CC BY-NC 4.0, non-commercial use only. Bundled FSResizer.dll (Fengist's renamed resizer, needed by the hull parts) is shipped unchanged.",
+    "author": [
+        "Fengist",
+        "Skizzy-create"
+    ],
+    "version": "0.1.0",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "CC-BY-NC-4.0",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/MaritimePack",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://github.com/Fengist/Maritime-Pack"
+    },
+    "tags": [
+        "parts",
+        "plugin"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        }
+    ],
+    "suggests": [
+        {
+            "name": "CommunityResourcePack"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/FengistAnim",
+            "install_to": "GameData"
+        },
+        {
+            "file": "GameData/MPUtils",
+            "install_to": "GameData"
+        },
+        {
+            "file": "GameData/Maritime Pack",
+            "install_to": "GameData"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.0/SkizzyNaval-MaritimePack-0.1.0.zip",
+    "download_size": 72960768,
+    "download_hash": {
+        "sha1": "778813412E4BE406FF49FE360357C1D0C7380CE3",
+        "sha256": "BF0EFA3B02BD74CAD5F1C0E390D11D19B16F625A05E6A543922EBDA6678D9043"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 254924692,
+    "release_date": "2026-11-07T19:05:27Z"
+}

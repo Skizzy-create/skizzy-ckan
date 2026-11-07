@@ -1,0 +1,88 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-IronSeasKANES",
+    "name": "Iron Seas KANES Balao class fleet boat (SkizzyNaval update)",
+    "abstract": "SkunkWorksCommand's WWII Balao-class submarine updated for KSP 1.12.5, BDArmory Plus 1.13 and NAS: realistic deck guns, crush depth and dependency fallbacks.",
+    "description": "Iron Seas KANES FIGHTING SHIPS 1 (1.0.0.1) regrouped under GameData/IronSeasKANES. The six deck guns get BDArmory 1.13 keys and real 20 mm Oerlikon, .50 M2, 40 mm Bofors and 4\"/50 ballistics (new 4\"/50 HC shell), and only load with NAS and BDArmory. The hull and sail collapse at about 224 m, the boat spawns surfaced, and ModuleManager fallbacks remove WildBlueTools, KerbalActuators, BonVoyage and Firespitter modules when those mods are missing (Kerbal Powers Naval ballast is used if present). Remove an old GameData/BalaoClassFleetBoat and GameData/4BladeFastScrew first. Known upstream issue: the six gun models have no turret or fire transforms, so the guns cannot aim or fire until the models are fixed. Original by SkunkWorksCommand, GPLv2.",
+    "author": [
+        "SkunkWorksCommand",
+        "Skizzy-create"
+    ],
+    "version": "0.1.0",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "GPL-2.0",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/IronSeasKANES",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://spacedock.info/mod/2528/Iron%20Seas%20KANES%20FIGHTING%20SHIPS%201"
+    },
+    "tags": [
+        "parts",
+        "combat"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        }
+    ],
+    "recommends": [
+        {
+            "name": "SkizzyNaval-NAS"
+        },
+        {
+            "any_of": [
+                {
+                    "name": "BDArmoryForRunwayProject",
+                    "min_version": "2:v1.13.0.0"
+                },
+                {
+                    "name": "BDArmory-Skizzy"
+                }
+            ],
+            "choice_help_text": "BDArmory Plus 1.13 (BDArmoryForRunwayProject) or the Skizzy fork build (BDArmory-Skizzy)."
+        },
+        {
+            "name": "WildBlueTools"
+        },
+        {
+            "name": "CommunityResourcePack"
+        },
+        {
+            "name": "FirespitterCore"
+        }
+    ],
+    "suggests": [
+        {
+            "name": "SubTrim"
+        },
+        {
+            "name": "KerbalPowersNaval"
+        },
+        {
+            "name": "BonVoyage"
+        },
+        {
+            "name": "Buffalo"
+        },
+        {
+            "name": "SkizzyNaval-HullBreach"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/IronSeasKANES",
+            "install_to": "GameData"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.0/SkizzyNaval-IronSeasKANES-0.1.0.zip",
+    "download_size": 22379011,
+    "download_hash": {
+        "sha1": "40079A9957B57BA9B752C8024FF0C1A67EFEB1B7",
+        "sha256": "C031BD4EF881D9B45791AFF67022FE5D34E501FCFC32762A924FB077E5E59A91"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 27079831,
+    "release_date": "2026-11-07T19:05:27Z"
+}

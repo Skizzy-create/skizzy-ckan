@@ -1,0 +1,59 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SubTrim",
+    "name": "SubTrim",
+    "abstract": "Automatic neutral trim and depth hold for KSP submarines (works with BDArmory AI, Kerbal Powers Naval, Buoyancy Adjuster and WildBlueTools).",
+    "author": "Skizzy-create",
+    "version": "1.0.0",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "MIT",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/SubTrim",
+        "repository": "https://github.com/Skizzy-create/SubTrim",
+        "bugtracker": "https://github.com/Skizzy-create/SubTrim/issues"
+    },
+    "tags": [
+        "plugin",
+        "control"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        }
+    ],
+    "suggests": [
+        {
+            "name": "BDArmory-Skizzy"
+        },
+        {
+            "name": "BDArmoryForRunwayProject"
+        }
+    ],
+    "supports": [
+        {
+            "name": "KerbalPowersNaval"
+        },
+        {
+            "name": "BuoyancyAdjuster"
+        },
+        {
+            "name": "WildBlueTools"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/SubTrim",
+            "install_to": "GameData"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/SubTrim/releases/download/v1.0.0/SubTrim-1.0.0.zip",
+    "download_size": 34822,
+    "download_hash": {
+        "sha1": "7F5E6660408C52284CA5C1843D755EED1493C21E",
+        "sha256": "56947C7BE182B0DC60EC70E1C1C6E80C45ABF197AE3D03B1191E23CC45691092"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 59511,
+    "release_date": "2026-11-07T18:55:56Z"
+}
