@@ -3,7 +3,7 @@
     "identifier": "BDArmory-Skizzy",
     "name": "BDArmory Plus (Skizzy fork build)",
     "abstract": "BDArmory Plus 1.13.1 with the Skizzy-create/BDArmory multitarget-1.13.1 plugin (multi-target, parallel salvo, depth-charge fixes). Drop-in replacement for BDArmoryForRunwayProject.",
-    "description": "The upstream BDArmory Plus 1.13.1.0 release zip with two files swapped: GameData/BDArmory/Plugins/BDArmory.dll (built from Skizzy-create/BDArmory branch multitarget-1.13.1, commit 01d0c9676585731e6fe9df85ee2be0ab802a20bf) and GameData/BDArmory/Localization/UI/en-us.cfg (the fork's new UI strings). Same install layout and dependencies as BDArmoryForRunwayProject 1.13.1.0. Provides and conflicts with BDArmory, so only one BDArmory can be installed. BDArmory by BahamutoD, Papa_Joe, jrodrigv, DocNappers and contributors, CC BY-SA 2.0.",
+    "description": "The upstream BDArmory Plus 1.13.1.0 release zip with two files swapped: GameData/BDArmory/Plugins/BDArmory.dll (built from Skizzy-create/BDArmory branch multitarget-1.13.1, commit 01d0c9676585731e6fe9df85ee2be0ab802a20bf) and GameData/BDArmory/Localization/UI/en-us.cfg (the fork's new UI strings). Same install layout and dependencies as BDArmoryForRunwayProject 1.13.1.0. Provides and conflicts with BDArmory and BDArmoryForRunwayProject, so only one BDArmory can be installed. BDArmory by BahamutoD, Papa_Joe, jrodrigv, DocNappers and contributors, CC BY-SA 2.0.",
     "author": [
         "BahamutoD",
         "Papa_Joe",
@@ -19,7 +19,7 @@
         "TheKurgan",
         "Skizzy-create"
     ],
-    "version": "v1.13.1.0-skizzy.0.1.0",
+    "version": "2:v1.13.1.0-skizzy.0.1.0",
     "ksp_version_min": "1.12.0",
     "ksp_version_max": "1.12.99",
     "license": "CC-BY-SA-2.0",
@@ -36,7 +36,8 @@
         "combat"
     ],
     "provides": [
-        "BDArmory"
+        "BDArmory",
+        "BDArmoryForRunwayProject"
     ],
     "depends": [
         {
@@ -49,6 +50,9 @@
     "conflicts": [
         {
             "name": "BDArmory"
+        },
+        {
+            "name": "BDArmoryForRunwayProject"
         }
     ],
     "install": [
@@ -70,5 +74,5 @@
     },
     "download_content_type": "application/zip",
     "install_size": 59327442,
-    "release_date": "2026-11-07T19:05:27Z"
+    "release_date": "2026-11-07T19:20:42Z"
 }
