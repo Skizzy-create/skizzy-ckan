@@ -1,0 +1,61 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-TitansBDArmoryExtension",
+    "name": "Titans BDArmory Extension: BDArmory Plus 1.13 patch (SkizzyNaval)",
+    "abstract": "ModuleManager patch for Titans BDArmory Extension (TBAE) 0.1.4. TBAE itself is not on CKAN: install it by hand from SpaceDock first.",
+    "description": "MANUAL STEP: TBAE is not on CKAN. Download TBAE 0.1.4 from https://spacedock.info/mod/3399 and copy its TBAE folder into GameData before or after installing this patch. The patch updates TBAE's 39 bullets to BDArmory 1.13 keys, renames two radomes that clashed with BDArmory's, restores parts whose models pointed at other mods, and defines the missing PLSLBolt and LaserCharge resources. Not included: TBAE's one-line Waterfall header fix in Parts/J-627/j627ares_wf.cfg (an overlay can't replace an original file; see the module README). Patch by Skizzy-create.",
+    "author": [
+        "Skizzy-create"
+    ],
+    "version": "0.1.2",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "CC-BY-SA-4.0",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/TitansBDArmoryExtension",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://spacedock.info/mod/3399/Titans%20BDArmory%20Extension%20(TBAE)"
+    },
+    "tags": [
+        "config",
+        "combat"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "any_of": [
+                {
+                    "name": "BDArmoryForRunwayProject",
+                    "min_version": "2:v1.13.0.0"
+                },
+                {
+                    "name": "BDArmory-Skizzy"
+                }
+            ],
+            "choice_help_text": "BDArmory Plus 1.13 (BDArmoryForRunwayProject) or the Skizzy fork build (BDArmory-Skizzy)."
+        }
+    ],
+    "suggests": [
+        {
+            "name": "NorthKerbinDynamicsRenewedExtended"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/TBAE/Patches/zz_TBAE_BDA113_Compat.cfg",
+            "install_to": "GameData/TBAE/Patches"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.2/SkizzyNaval-TitansBDArmoryExtension-0.1.2.zip",
+    "download_size": 13022,
+    "download_hash": {
+        "sha1": "3B3B2BE80E6A4968E597034648A1F35D699DBCED",
+        "sha256": "D7B24EE0750FB6751AE4F696485B7820C138D9CEC683A731396EA024FF2F3397"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 7071,
+    "release_date": "2026-11-08T10:40:38Z"
+}
