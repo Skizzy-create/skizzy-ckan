@@ -3,7 +3,7 @@
     "identifier": "SkizzyNavalPack",
     "name": "Skizzy Naval Pack",
     "abstract": "Everything for KSP 1.12.5 + BDArmory Plus 1.13 naval combat: the SkizzyNaval compatibility builds plus recommended naval mods from the main CKAN repository.",
-    "description": "Installs every SkizzyNaval module marked pack = depends in registry.toml, ModuleManager and BDArmory Plus 1.13 (or the Skizzy fork build), and recommends Kerbal Powers Naval, Buoyancy Adjuster and S.A.C.D. Hangar and the TBAE patch (TBAE needs a manual install) are suggestions.",
+    "description": "Installs every SkizzyNaval module marked pack = depends in registry.toml, ModuleManager and BDArmory Plus 1.13 (or BDArmory Overdrive), and recommends Kerbal Powers Naval, Buoyancy Adjuster and S.A.C.D. Hangar and the TBAE patch (TBAE needs a manual install) are suggestions.",
     "author": "Skizzy-create",
     "version": "0.1.2",
     "ksp_version_min": "1.12.0",
@@ -29,10 +29,10 @@
                     "min_version": "2:v1.13.0.0"
                 },
                 {
-                    "name": "BDArmory-Skizzy"
+                    "name": "BDArmory-Overdrive"
                 }
             ],
-            "choice_help_text": "BDArmory Plus 1.13 (BDArmoryForRunwayProject) or the Skizzy fork build (BDArmory-Skizzy)."
+            "choice_help_text": "BDArmory Plus 1.13 (BDArmoryForRunwayProject) or BDArmory Overdrive (BDArmory-Overdrive)."
         },
         {
             "name": "SkizzyNaval-HullBreach"

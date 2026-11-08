@@ -1,0 +1,74 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "BDArmory-Overdrive",
+    "name": "BDArmory Overdrive",
+    "abstract": "BDArmory Plus 1.13.1 with bug fixes and improvements: up to 1024 targets and 128 missiles per target, missile retargeting, parallel salvos, depth charges and memory-leak fixes. Drop-in replacement for BDArmory Plus.",
+    "description": "Built on top of BDArmory Plus 1.13.1, with bug fixes and improvements: multi-target missile engagement (up to 1024 targets, 128 missiles per target, 2-target cap fixed), retargeting of missiles whose target dies, parallel salvo firing in guard mode, depth-charge release over submerged targets, MultiMissileLauncher fixes, memory-leak fixes for long battles, and a 1-900 s debris clean-up delay slider. Same GameData/BDArmory folder, plugin, part modules and config nodes as BDArmory Plus, so weapon mods keep working. Provides and conflicts with BDArmory and BDArmoryForRunwayProject, so only one BDArmory can be installed. Replaces BDArmory-Skizzy. Released from Skizzy-create/BDArmory (branch multitarget-1.13.1). BDArmory by BahamutoD, maintained by Papa_Joe, then the BDArmory Plus team (DocNappers, SuicidalInsanity, josue, BillNyeTheIE and contributors), CC BY-SA 2.0.",
+    "author": [
+        "BahamutoD",
+        "Papa_Joe",
+        "jrodrigv",
+        "DocNappers",
+        "SuicidalInsanity",
+        "josue",
+        "BillNyeTheIE",
+        "Gedas-S",
+        "Skizzy-create"
+    ],
+    "version": "2:v1.13.1.0-overdrive.1",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "CC-BY-SA-2.0",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/BDArmory/tree/multitarget-1.13.1",
+        "repository": "https://github.com/Skizzy-create/BDArmory",
+        "bugtracker": "https://github.com/Skizzy-create/BDArmory/issues",
+        "x_upstream": "https://github.com/BrettRyland/BDArmory"
+    },
+    "tags": [
+        "plugin",
+        "parts",
+        "sound",
+        "combat"
+    ],
+    "provides": [
+        "BDArmory",
+        "BDArmoryForRunwayProject"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "name": "PhysicsRangeExtender"
+        }
+    ],
+    "conflicts": [
+        {
+            "name": "BDArmory"
+        },
+        {
+            "name": "BDArmoryForRunwayProject"
+        }
+    ],
+    "install": [
+        {
+            "find": "BDArmory",
+            "install_to": "GameData"
+        },
+        {
+            "find": "craft",
+            "install_to": "Ships",
+            "as": "SPH"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/BDArmory/releases/download/v1.13.1.0-overdrive.1/BDArmoryOverdrive-1.13.1.0-overdrive.1.zip",
+    "download_size": 43114206,
+    "download_hash": {
+        "sha1": "6D17B4A67C66D65F08A2C47BF2EFBD46A49E438E",
+        "sha256": "A56F791B063635018674C78CC7DE21BE9DEC03681B741C9091827F2349A0246B"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 59331695,
+    "release_date": "2026-11-08T09:46:00Z"
+}
