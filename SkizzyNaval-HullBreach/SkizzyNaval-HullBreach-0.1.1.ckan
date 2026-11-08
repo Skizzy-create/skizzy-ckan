@@ -1,0 +1,86 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-HullBreach",
+    "name": "HullBreach (SkizzyNaval port)",
+    "abstract": "Hull flooding, foundering and crush depth for BDArmory naval combat. Unofficial 1.8.0 port of HullBreach 1.7.0.5 to KSP 1.12.5 and BDArmory Plus 1.13.",
+    "description": "Rewritten flood model: per-compartment flooding toward each part's waterline, severity from BDArmory hit points and armour, submarine damage control, foundering, crush depth, one 10 Hz vessel module instead of per-part updates. ModuleManager patches for Large Boat Parts, MNWS, SACD, Kerbal Powers Naval, BDArmory, NAS, CVX and stock hulls (333 parts). Replaces the original HullBreach (it provides and conflicts with it). Original by gomker, SpannerMonkey, Gedas-S and zzhwudiaa, CC BY-NC-SA 3.0. Plugin source is in the repository.",
+    "author": [
+        "gomker",
+        "SpannerMonkey",
+        "Gedas-S",
+        "zzhwudiaa",
+        "Skizzy-create"
+    ],
+    "version": "0.1.1",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "CC-BY-NC-SA-3.0",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/HullBreach",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://github.com/gomker/HullBreach"
+    },
+    "tags": [
+        "plugin",
+        "physics",
+        "parts",
+        "combat"
+    ],
+    "provides": [
+        "HullBreach"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "any_of": [
+                {
+                    "name": "BDArmoryForRunwayProject",
+                    "min_version": "2:v1.13.0.0"
+                },
+                {
+                    "name": "BDArmory-Skizzy"
+                }
+            ],
+            "choice_help_text": "BDArmory Plus 1.13 (BDArmoryForRunwayProject) or the Skizzy fork build (BDArmory-Skizzy)."
+        }
+    ],
+    "recommends": [
+        {
+            "name": "SkizzyNaval-LargeBoatPartsPack"
+        }
+    ],
+    "suggests": [
+        {
+            "name": "KerbalPowersNaval"
+        },
+        {
+            "name": "StockalikeAircraftCarrierDecks"
+        },
+        {
+            "name": "SkizzyNaval-NAS"
+        }
+    ],
+    "conflicts": [
+        {
+            "name": "HullBreach"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/HullBreach",
+            "install_to": "GameData"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.1/SkizzyNaval-HullBreach-0.1.1.zip",
+    "download_size": 1344121,
+    "download_hash": {
+        "sha1": "748F7E8CD5ACA5439DF96556C80D9F29F7E2AC81",
+        "sha256": "2A4681DBB498ED296DC39495D461EAD7280A2A6581ED8157B6DD798F691CCE49"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 1455054,
+    "release_date": "2026-11-07T20:03:19Z"
+}

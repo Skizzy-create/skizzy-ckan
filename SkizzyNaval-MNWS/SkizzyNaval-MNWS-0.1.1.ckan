@@ -1,0 +1,82 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-MNWS",
+    "name": "[MNWS] Modern Naval Weapon System (SkizzyNaval update)",
+    "abstract": "MNWS 2.4 modern warships, missiles, VLS and aircraft updated for KSP 1.12.5 and BDArmory Plus 1.13, with fixes for naval AI combat.",
+    "description": "Adds MMPatches/MNWS_BDA113.cfg (removes modules from plugins that no longer exist, updates renamed BDArmory modules and keys, moves fuzes to bullets, SLW homing for torpedoes, naval AI fixes), an optional MNWS_BDA113_Balance.cfg, and the small MNWSFix.dll helper (AVLS launch transforms, hull bay links; source in the repository). No original file is edited. Shipped as a full copy because the CKAN MNWSModernNavalWeaponSystem targets KSP 1.4.4 and depends on BDArmory Continued; this build provides and conflicts with it. Original by Johnny005611, CC BY-SA 4.0.",
+    "author": [
+        "Johnny005611",
+        "Skizzy-create"
+    ],
+    "version": "0.1.1",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "CC-BY-SA-4.0",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/MNWS",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://spacedock.info/mod/1779/%5BMNWS%5DModern%20Naval%20Weapon%20System"
+    },
+    "tags": [
+        "parts",
+        "plugin",
+        "combat"
+    ],
+    "provides": [
+        "MNWSModernNavalWeaponSystem"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "any_of": [
+                {
+                    "name": "BDArmoryForRunwayProject",
+                    "min_version": "2:v1.13.0.0"
+                },
+                {
+                    "name": "BDArmory-Skizzy"
+                }
+            ],
+            "choice_help_text": "BDArmory Plus 1.13 (BDArmoryForRunwayProject) or the Skizzy fork build (BDArmory-Skizzy)."
+        }
+    ],
+    "recommends": [
+        {
+            "name": "SkizzyNaval-HullBreach"
+        }
+    ],
+    "suggests": [
+        {
+            "name": "AircraftCarrierAccessories"
+        },
+        {
+            "name": "FirespitterCore"
+        },
+        {
+            "name": "VesselMoverContinued"
+        }
+    ],
+    "conflicts": [
+        {
+            "name": "MNWSModernNavalWeaponSystem"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/Johnny",
+            "install_to": "GameData"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.1/SkizzyNaval-MNWS-0.1.1.zip",
+    "download_size": 581553133,
+    "download_hash": {
+        "sha1": "1EF2D627A21930C0FF999EB318BFAE893721F6C2",
+        "sha256": "F79AC753FE62D1D05E09CEFFD3760ED23B8556E1B613432913CFB3E3E3F5F2C0"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 671019228,
+    "release_date": "2026-11-07T20:03:19Z"
+}
