@@ -1,0 +1,52 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-AircraftCarrierAccessories",
+    "name": "Aircraft Carrier Accessories: KSP 1.12.5 / BDA 1.13 patch (SkizzyNaval)",
+    "abstract": "ModuleManager patch for Aircraft Carrier Accessories: removes the Enterprise's Hangar modules when Hangar isn't installed and works around the CLLS OnStart crash.",
+    "description": "Installs one file, KFC/Patches/zz_KSP1125_BDA113_Compat.cfg, next to the original Aircraft Carrier Accessories from CKAN (pulled in as a dependency). The CLLS block is a stopgap until ACA.dll null-checks its missing Base transform. Patch by Skizzy-create; Aircraft Carrier Accessories by flywlyx, MIT.",
+    "author": [
+        "Skizzy-create"
+    ],
+    "version": "0.1.1",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "MIT",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/AircraftCarrierAccessories",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://spacedock.info/mod/1068/Aircraft%20Carrier%20Accessories"
+    },
+    "tags": [
+        "config",
+        "combat"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "name": "AircraftCarrierAccessories"
+        }
+    ],
+    "suggests": [
+        {
+            "name": "Hangar"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/KFC/Patches/zz_KSP1125_BDA113_Compat.cfg",
+            "install_to": "GameData/KFC/Patches"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.1/SkizzyNaval-AircraftCarrierAccessories-0.1.1.zip",
+    "download_size": 6850,
+    "download_hash": {
+        "sha1": "FCDE126F36659A36B84FB24941B52ED776F62A84",
+        "sha256": "3FCAF61058863D1FC109FD43748D0065588F63EA08983B72B592CBD4C6422BDE"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 2282,
+    "release_date": "2026-11-07T20:03:19Z"
+}

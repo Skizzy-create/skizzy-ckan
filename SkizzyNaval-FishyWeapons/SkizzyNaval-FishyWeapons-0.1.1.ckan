@@ -1,0 +1,59 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-FishyWeapons",
+    "name": "Fishy Weapons: BDArmory Plus 1.13 patch (SkizzyNaval)",
+    "abstract": "ModuleManager patch for Fishy Weapons 0.10.0: completes all 52 bullet definitions, converts removed air-burst keys to fuzes, and fixes broken ammo, model and sound references.",
+    "description": "Installs one file, fishy_weapons_dev/Patches/zz_FishyWeapons_BDA113_Compat.cfg, on top of Fishy Weapons (FishyAntiMissileSpam) and Fishy Mod Core from CKAN. No original file is replaced. Fishy Weapons by Diamant Gott, CC BY-SA 4.0 (models reused from BDArmory Continued). Fishy Mod Core is restricted and is never redistributed here.",
+    "author": [
+        "Skizzy-create"
+    ],
+    "version": "0.1.1",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "CC-BY-SA-4.0",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/FishyWeapons",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://spacedock.info/mod/2961/fishy%20weapons%20(FAMS%20continued)"
+    },
+    "tags": [
+        "config",
+        "combat"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "any_of": [
+                {
+                    "name": "BDArmoryForRunwayProject",
+                    "min_version": "2:v1.13.0.0"
+                },
+                {
+                    "name": "BDArmory-Skizzy"
+                }
+            ],
+            "choice_help_text": "BDArmory Plus 1.13 (BDArmoryForRunwayProject) or the Skizzy fork build (BDArmory-Skizzy)."
+        },
+        {
+            "name": "FishyAntiMissileSpam"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/fishy_weapons_dev/Patches/zz_FishyWeapons_BDA113_Compat.cfg",
+            "install_to": "GameData/fishy_weapons_dev/Patches"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.1/SkizzyNaval-FishyWeapons-0.1.1.zip",
+    "download_size": 15574,
+    "download_hash": {
+        "sha1": "BBA23AA9673A3FC7A2F0C63A1C15020CFB33F190",
+        "sha256": "EB17A6095ABCC4AA9C868856BAAD7C9FFA8F52525EF8E8A767D9C5A81FE63AF5"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 33245,
+    "release_date": "2026-11-07T20:03:19Z"
+}
