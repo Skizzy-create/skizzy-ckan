@@ -13,11 +13,12 @@ https://github.com/Skizzy-create/skizzy-ckan/archive/refs/heads/main.tar.gz
 
 Keep the default `KSP-default` repository as well, because ModuleManager, BDArmory Plus and the
 other dependencies come from it. After a refresh, install **Skizzy Naval Pack**
-(`SkizzyNavalPack`), or single modules:
+(`SkizzyNavalPack`), or single modules. To use BDArmory Overdrive instead of BDArmory Plus, tick
+**BDArmory Overdrive** together with Skizzy Naval Pack.
 
 | Identifier | What it is |
 |---|---|
-| `SkizzyNavalPack` | Metapackage: all modules below, plus ModuleManager and BDArmory Plus 1.13 |
+| `SkizzyNavalPack` | Metapackage: all modules below, plus ModuleManager and BDArmory Plus 1.13 (or BDArmory Overdrive) |
 | `SkizzyNaval-HullBreach` | HullBreach 1.8 port (flooding, crush depth) |
 | `SkizzyNaval-NAS` | NAS 0.7.0 updated (WWII guns, torpedoes, depth charges) |
 | `SkizzyNaval-LargeBoatPartsPack` | Large Boat Parts Pack updated |
@@ -25,10 +26,11 @@ other dependencies come from it. After a refresh, install **Skizzy Naval Pack**
 | `SkizzyNaval-AdvancedWeaponsPack` | Advanced Weapons Pack updated |
 | `SkizzyNaval-MNWS` | [MNWS] Modern Naval Weapon System 2.4 updated |
 | `SkizzyNaval-IronSeasKANES` | Iron Seas Balao-class submarine updated |
-| `SkizzyNaval-AircraftCarrierAccessories` | Patch for Aircraft Carrier Accessories (installs the original) |
+| `SkizzyNaval-AircraftCarrierAccessories` | Aircraft Carrier Accessories with a rebuilt plugin (replaces the original) |
 | `SkizzyNaval-FishyWeapons` | Patch for Fishy Weapons (installs the original) |
 | `SkizzyNaval-TitansBDArmoryExtension` | Patch for TBAE (the original must be installed by hand) |
-| `BDArmory-Skizzy` | Optional BDArmory Plus 1.13.1 build with the Skizzy fork plugin (replaces BDArmory) |
+| `BDArmory-Overdrive` | BDArmory Overdrive: BDArmory Plus 1.13.1 with bug fixes and improvements ([Skizzy-create/BDArmory](https://github.com/Skizzy-create/BDArmory)); optional, replaces BDArmory Plus |
+| `BDArmory-Skizzy` | Retired after 0.1.2, replaced by `BDArmory-Overdrive` (`ckan replace BDArmory-Skizzy`) |
 | `SubTrim` | Automatic submarine trim and depth hold ([Skizzy-create/SubTrim](https://github.com/Skizzy-create/SubTrim)) |
 
 Licences and changes for each module are listed in

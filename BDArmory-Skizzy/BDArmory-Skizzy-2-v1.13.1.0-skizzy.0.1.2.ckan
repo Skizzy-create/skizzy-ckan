@@ -55,6 +55,9 @@
             "name": "BDArmoryForRunwayProject"
         }
     ],
+    "replaced_by": {
+        "name": "BDArmory-Overdrive"
+    },
     "install": [
         {
             "find": "BDArmory",

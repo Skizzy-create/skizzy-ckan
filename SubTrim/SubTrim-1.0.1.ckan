@@ -24,7 +24,7 @@
     ],
     "suggests": [
         {
-            "name": "BDArmory-Skizzy"
+            "name": "BDArmory-Overdrive"
         },
         {
             "name": "BDArmoryForRunwayProject"

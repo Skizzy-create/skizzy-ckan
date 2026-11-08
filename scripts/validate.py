@@ -7,9 +7,9 @@
 
 Checks: JSON syntax, CKAN.schema, <identifier>/<identifier>-<version>.ckan naming, unique
 identifier+version pairs, spec_version vs features used, download/hash formats, and that every
-relationship to one of our own identifiers (SkizzyNaval*, BDArmory-Skizzy, SubTrim) resolves to a file
-in this repository. With --check-downloads, each download is fetched and its size, SHA-1 and
-SHA-256 compared with the metadata.
+relationship (and replaced_by) to one of our own identifiers (SkizzyNaval*, BDArmory-Skizzy,
+BDArmory-Overdrive, SubTrim) resolves to a file in this repository. With --check-downloads,
+each download is fetched and its size, SHA-1 and SHA-256 compared with the metadata.
 """
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OWN = re.compile(r"^(SkizzyNaval.*|BDArmory-Skizzy|SubTrim)$")
+OWN = re.compile(r"^(SkizzyNaval.*|BDArmory-Skizzy|BDArmory-Overdrive|SubTrim)$")
 REL_KEYS = ("depends", "recommends", "suggests", "supports", "conflicts")
 HEX40 = re.compile(r"^[0-9A-F]{40}$")
 HEX64 = re.compile(r"^[0-9A-F]{64}$")
@@ -121,6 +121,10 @@ def main(argv=None) -> int:
             problems.append(f"{rel}: any_of needs spec_version v1.26+")
         if any("as" in d for d in doc.get("install", [])) and spec < (1, 18):
             problems.append(f"{rel}: install 'as' needs spec_version v1.18+")
+        if "replaced_by" in doc:
+            if spec < (1, 26):
+                problems.append(f"{rel}: replaced_by needs spec_version v1.26+")
+            rels = rels + [doc["replaced_by"]]
         for r in rels:
             name = r.get("name")
             if name and OWN.match(name) and name not in known:
