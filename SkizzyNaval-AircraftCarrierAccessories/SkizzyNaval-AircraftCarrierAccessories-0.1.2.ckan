@@ -1,0 +1,63 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-AircraftCarrierAccessories",
+    "name": "Aircraft Carrier Accessories (SkizzyNaval build)",
+    "abstract": "Aircraft Carrier Accessories 1.9.1 with a rebuilt ACA.dll: the CLLS start-up crash is fixed and the catapult arms and fires from action group 7 instead of the brakes BDArmory's AI uses.",
+    "description": "The complete Aircraft Carrier Accessories 1.9.1, with ACA.dll rebuilt from the decompiled 1.9.1 plugin (MIT): CLLS no longer throws in OnStart (its model has no Base transform), and the catapult hooks, arms and fires from a per-catapult action group of the aircraft (default AG7, or Brakes for the original behaviour), so BDArmory pilot AI braking no longer arms or launches it. Also drops a destroyed aircraft from the shuttle instead of throwing every frame, and removes the Enterprise's Hangar modules when Hangar isn't installed. Since 0.1.2 this replaces the CKAN AircraftCarrierAccessories module (provides and conflicts with it; up to 0.1.1 it was a patch on top of it). Original by flywlyx, MIT.",
+    "author": [
+        "flywlyx",
+        "Skizzy-create"
+    ],
+    "version": "0.1.2",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "MIT",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/AircraftCarrierAccessories",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://spacedock.info/mod/1068/Aircraft%20Carrier%20Accessories"
+    },
+    "tags": [
+        "parts",
+        "plugin",
+        "combat"
+    ],
+    "provides": [
+        "AircraftCarrierAccessories"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        }
+    ],
+    "suggests": [
+        {
+            "name": "Hangar"
+        }
+    ],
+    "conflicts": [
+        {
+            "name": "AircraftCarrierAccessories"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/KFC",
+            "install_to": "GameData"
+        },
+        {
+            "file": "Ships/SPH",
+            "install_to": "Ships"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.2/SkizzyNaval-AircraftCarrierAccessories-0.1.2.zip",
+    "download_size": 24769068,
+    "download_hash": {
+        "sha1": "757378D200DBE119F46DE1A71DADC9FEBAC4917B",
+        "sha256": "024C33ED22040607FEF87B833DBE3DC42C71C6EE7F79DD3F75746F1A8FD132D7"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 141480908,
+    "release_date": "2026-11-08T10:40:38Z"
+}

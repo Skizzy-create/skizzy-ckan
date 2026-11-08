@@ -1,0 +1,83 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-NAS",
+    "name": "NAS - Naval Artillery System (SkizzyNaval update)",
+    "abstract": "WWII naval guns, torpedoes and depth charges for BDArmory. NAS 0.7.0 configs and the AntiSubmarineWeapon plugin ported to KSP 1.12.5 and BDArmory Plus 1.13.",
+    "description": "All 46 bullets rewritten for BDArmory 1.13 (fixes zero penetration from apBulletMod = 0, bullet fuzes replace the removed airDetonation keys), radar and weapon keys updated, AntiSubmarineWeapon.dll 0.6.6 rebuilt against BDArmory 1.13.1 with depth-charge arming and torpedo fixes. The bundled ModuleManager 3.0.6 and Firespitter 7.6 are not shipped. Replaces the original NAS (provides and conflicts with it). Original by Acea and Summerfirefly, CC BY-SA 4.0.",
+    "author": [
+        "Acea",
+        "Summerfirefly",
+        "Skizzy-create"
+    ],
+    "version": "0.1.2",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "CC-BY-SA-4.0",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/NAS",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://spacedock.info/mod/83/NAS%20-%20Naval%20Artillery%20System"
+    },
+    "tags": [
+        "parts",
+        "plugin",
+        "combat"
+    ],
+    "provides": [
+        "NAS"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "any_of": [
+                {
+                    "name": "BDArmoryForRunwayProject",
+                    "min_version": "2:v1.13.0.0"
+                },
+                {
+                    "name": "BDArmory-Skizzy"
+                }
+            ],
+            "choice_help_text": "BDArmory Plus 1.13 (BDArmoryForRunwayProject) or the Skizzy fork build (BDArmory-Skizzy)."
+        }
+    ],
+    "recommends": [
+        {
+            "name": "FirespitterCore"
+        },
+        {
+            "name": "SkizzyNaval-HullBreach"
+        }
+    ],
+    "suggests": [
+        {
+            "name": "SkizzyNaval-LargeBoatPartsPack"
+        },
+        {
+            "name": "KIS"
+        }
+    ],
+    "conflicts": [
+        {
+            "name": "NAS"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/NAS",
+            "install_to": "GameData"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.2/SkizzyNaval-NAS-0.1.2.zip",
+    "download_size": 66256731,
+    "download_hash": {
+        "sha1": "DAD30CD7600C65B23EE869FB9AD9904398DC521F",
+        "sha256": "868D06312B51F00A260B4D5FBC9FA9083660C63A86D9141555E86A3EA11A1FFD"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 144451610,
+    "release_date": "2026-11-08T10:40:38Z"
+}

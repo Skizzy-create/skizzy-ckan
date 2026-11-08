@@ -1,0 +1,70 @@
+{
+    "spec_version": "v1.26",
+    "identifier": "SkizzyNaval-AdvancedWeaponsPack",
+    "name": "Advanced Weapons Pack (SkizzyNaval compatibility build)",
+    "abstract": "Advanced Weapons Pack 0.22 missiles for BDArmory Plus 1.13: the Castle Bravo bomb's dead ModuleShockwave becomes a BDArmory nuke.",
+    "description": "Adds one ModuleManager patch: the 15 Mt bomb's ModuleShockwave (an old NKD plugin that no longer exists) and conventional warhead are replaced with BDModuleNuke using the same values as NKD Reborn's Castle Bravo. Since 0.1.2 BDArmory's AI never selects the bomb (its engage flags are off); players can still select and drop it. Shipped as a full copy because the CKAN AdvancedWeaponsPack depends on the KSP 1.3.1-only NorthKerbinDynamics and can't be installed on 1.12.5; this build recommends NKD Reborn instead. Replaces AdvancedWeaponsPack (provides and conflicts). Original by hentaichou, MIT.",
+    "author": [
+        "hentaichou",
+        "Skizzy-create"
+    ],
+    "version": "0.1.2",
+    "ksp_version_min": "1.12.0",
+    "ksp_version_max": "1.12.99",
+    "license": "MIT",
+    "resources": {
+        "homepage": "https://github.com/Skizzy-create/skizzy-naval/tree/main/modules/AdvancedWeaponsPack",
+        "repository": "https://github.com/Skizzy-create/skizzy-naval",
+        "bugtracker": "https://github.com/Skizzy-create/skizzy-naval/issues",
+        "x_upstream": "https://spacedock.info/mod/3102/Advanced%20Weapons%20Pack"
+    },
+    "tags": [
+        "parts",
+        "combat"
+    ],
+    "provides": [
+        "AdvancedWeaponsPack"
+    ],
+    "depends": [
+        {
+            "name": "ModuleManager"
+        },
+        {
+            "any_of": [
+                {
+                    "name": "BDArmoryForRunwayProject",
+                    "min_version": "2:v1.13.0.0"
+                },
+                {
+                    "name": "BDArmory-Skizzy"
+                }
+            ],
+            "choice_help_text": "BDArmory Plus 1.13 (BDArmoryForRunwayProject) or the Skizzy fork build (BDArmory-Skizzy)."
+        }
+    ],
+    "recommends": [
+        {
+            "name": "NorthKerbinDynamicsRenewedExtended"
+        }
+    ],
+    "conflicts": [
+        {
+            "name": "AdvancedWeaponsPack"
+        }
+    ],
+    "install": [
+        {
+            "file": "GameData/Advanced Weapons Pack",
+            "install_to": "GameData"
+        }
+    ],
+    "download": "https://github.com/Skizzy-create/skizzy-naval/releases/download/v0.1.2/SkizzyNaval-AdvancedWeaponsPack-0.1.2.zip",
+    "download_size": 4088452,
+    "download_hash": {
+        "sha1": "683F6F3DA1B4954A02D6B23E99F229B83CC8DDEA",
+        "sha256": "8A2F9B8FD833FD45A001D23B2E9EAB82695573825F0AA9EE00F89525A3378503"
+    },
+    "download_content_type": "application/zip",
+    "install_size": 7189399,
+    "release_date": "2026-11-08T10:40:38Z"
+}
